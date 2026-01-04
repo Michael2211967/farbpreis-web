@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Farbpreisberechnung</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Farbpreisberechnung<span class="cursor"></span></h2>
+        <table>
+            <tr>
+                <td><code>10 INPUT "PREIS JE KILO FARBE EINGEBEN: ";KP</code></td>
+                <td>Preis je Kilo Farbe eingeben:</td>
+                <td><input type="number" id="kiloprice"></td>
+            </tr>
+            <tr>
+                <td><code>20 INPUT "KILO JE QUADRATMETER EINGEBEN: ";KQ</code></td>
+                <td>Kilo je Quadratmeter eingeben:</td>
+                <td><input type="number" id="kiloquantity"></td>
+            </tr>
+            <tr>
+                <td><code>30 PRINT</code></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td><code>40 INPUT "LAENGE EINGEBEN: ";L</code></td>
+                <td>Länge eingeben:</td>
+                <td><input type="number" id="length"></td>
+            <tr>
+                <td><code>50 INPUT "BREITE EINGEBEN:";B</code></td>
+                <td>Breite eingeben:</td>
+                <td><input type="number" id="width"></td>
+            </tr>
+            <tr>
+                <td><code>60 F=L*B</code></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td><code>70 M=F*KQ</code></td>
+                <td></td>
+                <td><button onclick="run()" id="run-btn">RUN</button></td>
+            </tr>
+            <tr>
+                <td><code>80 P=M*KP</code></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td><code>90 PRINT</code></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td><code>100 PRINT "FUER DIE FLAECHE VON ";F;" QM"</code></td>
+                <td colspan="2" id="area"></td>
+            </tr>
+            <tr>
+                <td><code>110 PRINT "WERDEN ";M;" KILO FARBE BENOETIGT."</code></td>
+                <td colspan="2" id="quantity"></td>
+            </tr>
+            <tr>
+                <td><code>120 PRINT "DER PREIS FUER DIESE ";M;" KILO FARBE BETRAEGT ";P;" EUR.</code></td>
+                <td colspan="2" id="price"></td>
+            </tr>
+            <tr>
+                <td><code>130 END</code></td>
+                <td colspan="2">Ready.</td>
+            </tr>
+        </table>
+        <div class="downloadArea">
+            Das Tool kann in meinen Downloads als <a href="../downloads/farbpreis.tar.gz">farbpreis.tar.gz</a> für die Linux-Konsole<br>
+            oder <a href="../downloads/farbpreis.zip">farbpreis.zip</a> für das Windows-Terminal heruntergeladen werden.
+            <p>
+                alternativ können Linux-User die Datei in der Bash mit <code>wget https://michael2211967.de/downloads/farbpreis.tar.gz</code>
+                downloaden
+            </p>
+        </div>
+    </div>
+</body>
+</html>
