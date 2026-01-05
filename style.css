@@ -56,6 +56,17 @@ input {
     color: black;
     text-decoration: underline;
 }
+
+.terminal{
+  font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+  font-size: 12; 
+  line-height: 2;
+  margin: 1.2% 0;
+  padding: 1% 2%;
+  background: #171421;
+  color: #D0CFCC;
+}
+
 /* Harte Blink-Animation (An/Aus ohne Übergang) */
 @keyframes blink {
     to {
