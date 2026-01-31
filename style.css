@@ -1,3 +1,10 @@
+@font-face {
+    font-family:'C64-font'; /* Der Name, den du später nutzt */
+    src: url('fonts/Commodore-64-v6.3.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Verhindert, dass Text unsichtbar bleibt, während die Schrift lädt */
+}
 body {
     display: flex;
     justify-content: center;
@@ -5,7 +12,7 @@ body {
     min-height: 100vh;      /* Nutzt die volle Höhe des Fensters */
     margin: 0;
     background-color: #a396ff;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'C64-font', Courier, monospace;
 }
 .container {
     background-color: #4f43d8;
@@ -23,7 +30,7 @@ input {
     background-color: #4f43d8;
     border: 1px solid #a396ff;
     color: #a396ff;
-    font-family: 'Courier New', monospace;
+    font-family: 'C64-font', Courier, monospace;
     
     padding: 5px;
     margin-bottom: 15px;
@@ -43,6 +50,7 @@ input {
 }
 
 .downloadArea {
+    font-family: 'Courier New', Courier, monospace;
     margin: 30px;
     color: white;
 }
@@ -59,7 +67,7 @@ input {
 
 .terminal{
   font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
-  font-size: 12; 
+  font-size: 12px; 
   line-height: 2;
   margin: 1.2% 0;
   padding: 1% 2%;

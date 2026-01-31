@@ -8,7 +8,7 @@ function run() {
     let quantity = area * kiloquantity;
     let price = quantity * kiloprice;
 
-    document.getElementById('area').innerText = `Für die Fläche von ${area.toFixed(2)} qm`;
-    document.getElementById('quantity').innerText = `werden ${quantity.toFixed(2)} Kilo Farbe benötigt.`;
-    document.getElementById('price').innerText = `Der Preis für diese ${quantity.toFixed(2)} kg Farbe beträgt ${price.toFixed(2)} EUR.`;
+    document.getElementById('area').innerText = `FUER DIE FLAECHE VON ${area.toFixed(2)} QM`;
+    document.getElementById('quantity').innerText = `WERDEN ${quantity.toFixed(2)} KILO FARBE BENOETIGT.`;
+    document.getElementById('price').innerText = `DER PREIS FUER DIESE ${quantity.toFixed(2)} KG FARBE BETRAEGT ${price.toFixed(2)} EUR.`;
 }
