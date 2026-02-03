@@ -3,6 +3,7 @@
     src: url('fonts/Commodore-64-v6.3.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-size: 15px;
     font-display: swap; /* Verhindert, dass Text unsichtbar bleibt, während die Schrift lädt */
 }
 body {
@@ -67,12 +68,16 @@ input {
 
 .terminal{
   font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
-  font-size: 12px; 
+  font-size: 15px; 
   line-height: 2;
   margin: 1.2% 0;
   padding: 1% 2%;
   background: #171421;
   color: #D0CFCC;
+}
+
+.run-btn{
+    font-size: 15px;
 }
 
 /* Harte Blink-Animation (An/Aus ohne Übergang) */
@@ -124,5 +129,16 @@ input {
     .downloadArea a:hover {
         color: black;
         text-decoration: underline;
+    }
+}
+@media (min-width: 2600px) {
+    body {
+        font-size: 25px;
+    }
+    .terminal {
+        font-size: 25px;
+    }
+    .run-btn {
+        font-size: 25px;
     }
 }
