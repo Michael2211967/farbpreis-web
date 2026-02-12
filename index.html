@@ -13,12 +13,12 @@
         <table>
             <tr>
                 <td><code>10 INPUT "PREIS JE KILO FARBE EINGEBEN: ";KP</code></td>
-                <td>Preis je Kilo Farbe eingeben:</td>
+                <td>PREIS JE KILO FARBE EINGEBEN:</td>
                 <td><input type="number" id="kiloprice"></td>
             </tr>
             <tr>
                 <td><code>20 INPUT "KILO JE QUADRATMETER EINGEBEN: ";KQ</code></td>
-                <td>Kilo je Quadratmeter eingeben:</td>
+                <td>KILO JE QUADRATMETER EINGEBEN:</td>
                 <td><input type="number" id="kiloquantity"></td>
             </tr>
             <tr>
@@ -27,12 +27,17 @@
             </tr>
             <tr>
                 <td><code>40 INPUT "LAENGE EINGEBEN: ";L</code></td>
-                <td>Laenge eingeben:</td>
+                <td>LAENGE EINGEBEN:</td>
                 <td><input type="number" id="length"></td>
             <tr>
-                <td><code>50 INPUT "BREITE EINGEBEN:";B</code></td>
-                <td>Breite eingeben:</td>
+                <td><code>50 INPUT "BREITE EINGEBEN: ";B</code></td>
+                <td>BREITE EINGEBEN:</td>
                 <td><input type="number" id="width"></td>
+            </tr>
+            <tr>
+                <td><code>55 INPUT "MEHRWERTSTEUERSATZ: ";TA</code></td>
+                <td>MEHRWERTSTEUERSATZ:</td>
+                <td><input type="number" id="tax-rate" value="19.0"></td>
             </tr>
             <tr>
                 <td><code>60 F=L*B</code></td>
@@ -47,6 +52,8 @@
                 <td><code>80 P=M*KP</code></td>
                 <td colspan="2"></td>
             </tr>
+                <td><code>85 T=P*TA/100</code></td>
+                <td colspan="2"></td>
             <tr>
                 <td><code>90 PRINT</code></td>
                 <td colspan="2"></td>
@@ -64,8 +71,12 @@
                 <td colspan="2" id="price"></td>
             </tr>
             <tr>
+                <td><code><script>document.write(wrapHtmlText('122 PRINT "DIE MEHRWERTSTEUER FUER DIESE ";P;" EUR BETRAEGT ";T;" EUR."'));</script></code></td>
+                <td colspan="2" id="tax"></td>
+            </tr>    
+            <tr>
                 <td><code>130 END</code></td>
-                <td colspan="2">Ready.</td>
+                <td colspan="2">READY.</td>
             </tr>
         </table>
         <div class="downloadArea">
